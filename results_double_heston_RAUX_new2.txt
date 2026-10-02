@@ -1,0 +1,68 @@
+======================================================================
+  Double Heston  +  RAUX
+======================================================================
+
+--- Structural Parameter Estimates ---
+
+  Parameter            Estimate
+  ---------            --------
+  kappa1               2.708188
+  kappa2               0.012999
+  Vbar1                0.217720
+  Vbar2                0.417513
+  sigma1               1.184517
+  sigma2               0.168480
+  rho1                 0.160098
+  rho2                -0.999000
+
+  Objective (chi2)        = 11.842996
+  Objective OOS chi2      = 12.128046  (ratio 1.024)
+  Cross-restart rho1 spread = 1.1592, rho2 spread = 1.1777
+
+--- Stage 1 CMA-ES per-restart chi^2 ---
+  Restart 1: chi^2 = 11.843369
+  Restart 2: chi^2 = 11.850296
+  Restart 3: chi^2 = 12.521977
+  Restart 4: chi^2 = 12.525557
+  Restart 5: chi^2 = 12.521709
+  Restart 6: chi^2 = 12.521555
+  Restart 7: chi^2 = 11.843406
+  Restart 8: chi^2 = 12.944955
+  Restart 9: chi^2 = 15.939408
+  Restart 10: chi^2 = 12.521494
+
+--- Auxiliary Parameters: Empirical vs Simulated at Optimum ---
+
+  Parameter     Empirical    Simulated         Diff     SE(diff)    t_stat   chi2_i
+  ---------     ---------    ---------         ----     --------    ------   ------
+  mean_logRV     4.649767     4.666359     0.016593     0.005453      3.04     0.00
+  har_beta_d     0.339695     0.340971     0.001276     0.000884      1.44    -0.22
+  har_beta_w     0.388552     0.413293     0.024741     0.001631     15.17    -3.73
+  har_beta_m     0.217929     0.184511    -0.033417     0.001434    -23.30     4.01
+  har_var_eps     0.274801     0.273862    -0.000939     0.000965     -0.97    -0.03
+  vg_slope       0.118973     0.140338     0.021366     0.000700     30.54     3.40
+  vg_level      -0.744932    -0.778532    -0.033600     0.002908    -11.55     0.67
+  lev_corr1     -0.125404    -0.084532     0.040872     0.000548     74.62     6.22
+  semivar_lev     0.115856     0.092058    -0.023798     0.000577    -41.28     0.85
+  ret_skew      -0.185389    -0.138403     0.046986     0.005470      8.59    -0.50
+  ret_kurt       4.572492     3.215169    -1.357323     0.046129    -29.42     1.17
+
+  Sum chi2_i = 11.8430   (total chi^2 = 11.8430)
+  |t| > 2 on: mean_logRV, har_beta_w, har_beta_m, vg_slope, vg_level, lev_corr1, semivar_lev, ret_skew, ret_kurt -> these moments are misfitted beyond MC noise.
+
+--- Derived Quantities ---
+
+  Factor 1:
+    kappa1 = 2.7082,  half-life = 0.26 days
+    Vbar1  = 0.217720  (annualized = 54.865418)
+    sigma1 = 1.1845,  Feller ratio = 0.8405
+    rho1   = 0.1601
+  Factor 2:
+    kappa2 = 0.0130,  half-life = 53.32 days
+    Vbar2  = 0.417513  (annualized = 105.213226)
+    sigma2 = 0.1685,  Feller ratio = 0.3824
+    rho2   = -0.9990
+  Total unconditional variance (ann.): 160.078645
+  Total unconditional volatility (ann. %): 12.6522
+
+======================================================================
